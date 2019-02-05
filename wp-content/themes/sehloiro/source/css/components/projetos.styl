@@ -1,0 +1,100 @@
+.main-projects
+    padding: 100px 0 100px 100px
+    +below($bp.lg)
+        padding: 100px 20px
+    .logo
+        width: 300px
+        +below($bp.lg)
+            width: 250px
+        +below($bp.sm)
+            margin: 0 auto
+        img
+            width: 100%
+    .top
+        display flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 30px
+        width: 100%
+        max-width 1280px
+        padding-right: 20px
+        +below($bp.sm)
+            padding: 0
+        h2
+            font-weight: 300
+            font-style: italic
+            font-size: 35px
+            +below($bp.lg)
+                font-size: 20px
+            +below($bp.sm)
+                text-align: center
+                margin: 0 auto
+        img
+            +below($bp.lg)
+                display none
+    .media-posts
+        margin-top: 100px
+        padding-bottom: 30px
+        +below($bp.lg)
+            margin-top: 50px
+
+.card-project
+    +above($bp.lg)
+        flex: 0 0 430px
+        margin-right: 50px
+    +below($bp.lg)
+        width: 100%
+        &:not(:last-child)
+            margin-bottom: 50px
+    h3
+        font-weight: 400
+        letter-spacing: 7px
+        font-size: 25px
+        margin-bottom: 30px
+        +below($bp.lg)
+            font-size: 20px
+    figure
+        width: 100%
+        height: 120px
+        border-left: 10px solid $color.primary
+        margin-bottom: 30px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            object-position: center
+    p
+        font-size: 18px
+        font-weight: 300
+        margin-bottom: 20px
+        line-height: 1.6
+        +below($bp.lg)
+            font-size: 16px
+    span.text
+        font-style: italic
+        display block
+        margin-bottom: 25px
+
+.ui-button
+    display inline-block
+    padding: 0 15px
+    height: 40px
+    line-height: 40px
+    background: $color.gray-dark
+    color: white
+    font-size: 20px
+    font-weight: 800
+    text-transform: uppercase
+    margin-right: 20px
+    transition: .2s
+    border: none
+    cursor pointer
+    +below($bp.lg)
+        font-size: 18px
+    &.read-more
+        background: $color.primary
+        &:hover
+            background: darken($color.primary, 10%)
+    &:not(.read-more)
+        &:hover
+            opacity: .85

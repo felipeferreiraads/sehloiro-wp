@@ -1,0 +1,82 @@
+.main-content
+    padding-top: 100px
+    .top
+        display: flex
+        justify-content: space-between
+        +below($bp.sm)
+            flex-direction: column
+            figure
+                display flex
+                justify-content: center
+                img
+                    max-width 70%
+    .right
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding: 15px 0
+        +above($bp.sm)
+            align-items: flex-end
+        +below($bp.sm)
+            align-items: center
+            margin-top: 30px
+            > *:not(:last-child)
+                margin-bottom: 10px
+        img
+            height: 20px
+        p
+            font-style: italic
+            letter-spacing: 5px
+            font-size: 20px
+        a
+            font-size: 25px
+            font-style: italic
+            letter-spacing: 5px
+            color: $color.primary
+    .content
+        display flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-top: 50px
+        .column
+            width: 48%
+            +below($bp.lg)
+                width: 100%
+                &:not(:last-child)
+                    margin-bottom: 20px
+            figure
+                width: 100%
+                height 150px
+                border-left: 10px solid $color.primary
+                img
+                    width: 100%
+                    height 100%
+                    object-fit: cover
+                    object-position: center
+        .yodinha
+            font-weight: 600
+            margin-top: 30px
+            line-height: 1.8
+            img
+                float: right
+                margin-left: 10px
+        p
+            &:not(.yodinha)
+                line-height: 1.5
+                text-align: justify
+                &:not(:last-child)
+                    margin-bottom: 20px
+        .button
+            width: 100%
+            height 50px
+            line-height: 50px
+            background: $color.primary
+            display block
+            text-align: center
+            font-weight: 800
+            color: white
+            font-size: 25px
+            transition: .2s
+            margin-top: 50px
+            &:hover
+                background: darken($color.primary, 10%)

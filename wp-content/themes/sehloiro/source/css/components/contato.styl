@@ -1,0 +1,151 @@
+.main-contact
+    padding: 100px 0
+    +below($bp.sm)
+        padding: 100px 0 50px
+    .logo
+        +below($bp.sm)
+            display block
+        img
+            width: 300px
+            +below($bp.sm)
+                width: 250px
+                margin: 0 auto
+                display: block
+    h2
+        font-size: 22px
+        max-width: 500px
+        font-style: italic
+        font-weight: 300
+        margin: 30px 0
+        &.main
+            max-width 700px
+        +below($bp.sm)
+            font-size: 20px
+            text-align: center
+    form
+        .grid
+            display flex
+            justify-content: space-between
+            align-items: center
+            flex-wrap: wrap
+            &:not(.no-margin)
+                margin-bottom: 15px
+            > div
+                width: 49%
+                +below($bp.md)
+                    width: 100%
+            +below($bp.md)
+                > *:not(:last-child)
+                    margin-bottom: 15px
+        input[type=text], input[type=email], textarea, select, .label
+            height: 50px
+            padding: 0 10px
+            background: $color.gray-light
+            display inline-block
+            width: 49%
+            color: $color.text
+            border-width: 0 0 0 0
+            +below($bp.md)
+                width: 100%
+            &:not(.no-border)
+                border-left: 10px solid $color.primary
+            &::placeholder
+                opacity: 1
+            &.city
+                width: 70%
+                margin: 0 !important
+            &.uf
+                width: 26%
+            &.no-border
+                width: 150px
+                +below(1120px)
+                    width: 100px
+                +below($bp.md)
+                    width: 150px
+                +below(500px)
+                    width: 100%
+                    margin-top: 15px
+            &.error
+                border-left: 10px solid $color.danger
+        textarea
+            width: 100%
+            height: 120px
+            padding: 20px
+            resize: none
+        .label
+            line-height: 50px
+            display block
+            &.interest
+                width: auto
+                +below($bp.md)
+                    width: 100%
+            &.brand
+                width: 175px
+        label
+            font-size: 16px
+            display flex
+            align-items: center
+            input
+                margin-right: 5px
+        .checkbox-group
+            flex: 1
+            display flex
+            justify-content: space-between
+            padding-left: 20px
+            +below($bp.md)
+                flex-direction: column
+                > *:not(:last-child)
+                    margin-bottom: 10px
+        .radio-group
+            display flex
+            flex: 1
+            padding: 0 15px
+            > *:first-child
+                margin-right: 10px
+        .grid-brand
+            > *
+                margin-bottom: 0 !important
+    .bottom
+        display flex
+        margin-top: 30px
+        +below($bp.lg)
+            flex-direction: column
+            .ui-button
+                align-self: flex-start
+        > *
+            margin-right: 50px
+            +below($bp.lg)
+                margin: 0 0 20px 0
+        h3
+            font-size: 20px
+            text-transform: uppercase
+            letter-spacing: 5px
+            font-weight: 400
+        .grid
+            justify-content: flex-start
+            > *
+                margin: 8px 8px 0 0 !important
+                color: $color.primary
+        a
+            margin-top: 7px
+            display inline-block
+    .map
+        margin: 40px 0
+        h3
+            letter-spacing: 5px
+            text-transform: uppercase
+            font-weight: 300
+            font-size: 22px
+            +below($bp.lg)
+                font-size: 16px
+        address
+            font-size: 20px
+            font-style: normal
+            letter-spacing: 5px
+            font-weight: 600
+            margin: 5px 0 30px
+            +below($bp.lg)
+                font-size: 16px
+        iframe
+            width: 100%
+            height: 400px

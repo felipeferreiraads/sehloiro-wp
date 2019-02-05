@@ -1,0 +1,122 @@
+.main-about
+    padding: 100px 0
+    +below($bp.lg)
+        padding: 100px 0 30px
+    .logo
+        width: 250px
+        +below($bp.sm)
+            margin: 0 auto
+        img
+            width: 100%
+    .top
+        margin: 30px 0
+        display flex
+        justify-content: space-between
+        +below($bp.sm)
+            flex-direction: column
+        h2
+            font-size: 25px
+            font-style: italic
+            font-weight: 300
+            max-width: 400px
+            +below($bp.lg)
+                font-size: 20px
+                text-align: center
+        .social
+            display flex
+            flex-wrap: wrap
+            justify-content: flex-end
+            +below($bp.sm)
+                justify-content: center
+                margin-top: 20px
+            .text
+                width: 100%
+                margin-bottom: 4px
+                font-size: 16px
+                text-align: right
+                +below($bp.sm)
+                    text-align: center
+            a
+                font-size: 20px
+                color: $color.primary
+                &:not(:last-child)
+                    margin-right: 5px
+    h3
+        font-weight: 400
+        letter-spacing: 5px
+        text-transform: uppercase
+        margin-bottom: 20px
+    .timeline
+        padding-left: 100px
+        position relative
+        +below($bp.sm)
+            padding-left: 60px
+        &::before
+            content: ''
+            width: 3px
+            height: 100%
+            background: $color.primary
+            position: absolute
+            top: 0
+            left: 97px
+            +below($bp.sm)
+                left: 57px
+        .item
+            padding-left: 30px
+            position relative
+            margin-bottom: 30px
+            +below($bp.sm)
+                padding-left: 15px
+                p
+                    font-size: 16px
+            span
+                position: absolute
+                top: 0
+                left: -100px
+                font-size: 25px
+                line-height: 1.5
+                font-weight: 600
+                +below($bp.sm)
+                    font-size: 18px
+                    left -60px
+            p
+                img
+                    width: 100%
+                    display: block
+                    height: 100px
+                    margin-top: 20px
+                    object-fit: cover
+                    object-position: center
+            .image
+                margin: 20px 0
+                display flex
+                justify-content: space-between
+                img
+                    width: 100%
+                    height: 100px
+                    object-fit: cover
+                    object-position: center
+                    &.half
+                        width: 49%
+    .brands
+        margin-top: 40px
+        .grid
+            display flex
+            flex-wrap: wrap
+            justify-content: space-between
+        .item
+            width: 23%
+            height: 250px
+            background: $color.gray-light
+            margin-bottom: 30px
+            display flex
+            justify-content: center
+            align-items: center
+            padding: 20px
+            +below($bp.md)
+                width: 49%
+            +below($bp.xs)
+                width: 100%
+            img
+                object-fit: contain
+                object-position: center

@@ -1,0 +1,4 @@
+*.psd
+!spec/*.psd
+node_modules
+yarn.lock

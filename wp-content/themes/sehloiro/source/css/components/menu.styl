@@ -1,0 +1,36 @@
+.main-menu
+    position fixed
+    top 0
+    left -300px
+    width 300px
+    height: 100%
+    min-height: 100vh
+    background: $color.gray-dark
+    display flex
+    flex-direction: column
+    justify-content: center
+    padding: 20px
+    transition: all .3s ease-in
+    +below($bp.lg)
+        width: 250px
+        left: -250px
+        justify-content: flex-start
+        padding-top: 50px
+    a
+        color: $color.primary
+        font-style: italic
+        font-size: 25px
+        text-align: center
+        text-transform: uppercase
+        +below($bp.xg)
+            font-size: 20px
+        &:not(:last-child)
+            margin-bottom: 20px
+        &.active
+            color: white
+            text-decoration: line-through
+
+.menu-switch
+    position relative
+    transition: all .3s ease-in
+    left 0

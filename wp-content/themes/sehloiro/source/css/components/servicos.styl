@@ -1,0 +1,81 @@
+.main-services
+    padding 100px 0
+    +below($bp.lg)
+        padding: 100px 0 50px
+    .logo
+        width: 300px
+        +below($bp.lg)
+            width: 250px
+            margin: 0 auto
+        img
+            width: 100%
+    h2
+        font-size: 22px
+        max-width: 500px
+        font-style: italic
+        font-weight: 300
+        margin: 30px 0
+        +below($bp.lg)
+            font-size: 20px
+            text-align: center
+            margin 30px auto
+    .services
+        .item
+            display flex
+            &:not(:last-child)
+                margin-bottom: 30px
+            +below($bp.lg)
+                flex-direction: column
+                align-items: center
+            figure
+                width: 120px
+                height: 120px
+                padding: 10px
+                +above($bp.lg)
+                    border-left: 3px solid $color.primary
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: contain
+                    object-position: center
+        .text
+            flex: 1
+            padding-left: 20px
+            +below($bp.lg)
+                font-size: 16px
+                text-align: center
+            h3
+                font-size: 35px
+                letter-spacing: 8px
+                font-weight: 400
+                margin-bottom: 10px
+                +below($bp.lg)
+                    text-align: center
+                    font-size: 25px
+    .interest
+        margin: 50px 0
+        font-size: 22px
+        +below($bp.lg)
+            font-size: 18px
+            text-align: center
+        a
+            font-style: italic
+            font-weight: 600
+            &:hover
+                text-decoration: underline
+    .social
+        display flex
+        +below($bp.lg)
+            justify-content: center
+        a
+            font-size: 22px
+            color: $color.primary
+            &:not(:last-child)
+                margin-right: 8px
+    .mail
+        font-weight: 300
+        font-style: italic
+        margin-top: 10px
+        display block
+        +below($bp.lg)
+            text-align: center

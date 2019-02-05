@@ -1,0 +1,72 @@
+header
+    width: 140px
+    height: 100vh
+    position fixed
+    top: 0
+    left: 0
+    display flex
+    transition: all .3s ease-in
+    +below($bp.lg)
+        display none
+        height: auto
+    .open-menu
+        width: 70px
+        height: 100%
+        padding: 50px 0
+        background: $color.gray-light
+        display flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        cursor pointer
+        transition: .2s
+        position: relative
+        &:hover
+            background: darken($color.gray-light, 10%)
+        span
+            writing-mode: vertical-rl
+            text-orientation: upright
+            text-transform: uppercase
+            letter-spacing: 2px
+        .bars
+            width: 35%
+            height: 100px
+            display flex
+            justify-content: space-between
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            .bar
+                width: 1px
+                height 100%
+                background: $color.gray-medium
+        .circle
+            width: 15px
+            height: 15px
+            border-radius: 100%
+            background: $color.primary
+    .image
+        width: 70px
+        height: 100%
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            object-position: right
+
+.open-menu-mobile
+    position: absolute
+    top: 20px
+    left: 20px
+    width: 40px
+    height: 40px
+    border-radius: 100%
+    background: $color.primary
+    display flex
+    justify-content: center
+    align-items: center
+    color white
+    font-size: 22px
+    +above($bp.lg)
+        display none

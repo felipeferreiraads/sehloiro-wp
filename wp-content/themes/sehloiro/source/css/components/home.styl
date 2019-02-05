@@ -1,0 +1,75 @@
+.main-home
+    height: 100vh
+    display flex
+    flex-direction: column
+    align-items: center
+    padding: 0 20px
+    +above($bp.lg)
+        justify-content: center
+    +below($bp.lg)
+        padding: 120px 20px 0
+    figure
+        width 52%
+        padding-bottom: 10vh
+        margin-bottom: 10vh
+        position relative
+        +below($bp.lg)
+            width: 70%
+            padding-bottom: 5vh
+            margin-bottom: 5vh
+        &::after
+            content: ''
+            width 30%
+            height 1px
+            background: $color.gray-medium
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+        img
+            width 100%
+    h1
+        font-size: 25px
+        font-weight: 400
+        text-align: center
+        margin-bottom: 10vh
+        text-transform: uppercase
+        letter-spacing: 5px
+        +below($bp.lg)
+            font-size: 20px
+            margin-bottom: 5vh
+    p
+        font-size: 25px
+        color: $color.primary
+        text-align: center
+        max-width 400px
+        text-transform: uppercase
+        font-style: italic
+        letter-spacing: 5px
+        line-height: 1.2
+        margin-bottom: 10vh
+        +below($bp.lg)
+            font-size: 20px
+        &:first-line
+            font-weight: 800
+            font-style: normal
+    .nav-home
+        display flex
+        +below($bp.lg)
+            display none
+        a
+            display inline-block
+            line-height: 50px
+            padding: 0 20px
+            background: $color.gray-light
+            font-size: 20px
+            font-style: italic
+            font-weight: 300
+            transition: .2s
+            +below(1120px)
+                font-size: 18px
+                padding: 0 15px
+            &:hover
+                background: darken($color.gray-light, 10%)
+            &:not(:last-child)
+                margin-right: 10px
