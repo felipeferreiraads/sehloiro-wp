@@ -8,7 +8,7 @@
         <div class="top">
             <div class="grid">
                 <div class="logo">
-                    <img src="<?php echo get_template_directory_uri(); ?><?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="SehLoiro">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="SehLoiro">
                     <span>na Mídia</span>
                 </div>
             </div>

@@ -13,7 +13,7 @@ function form_contact () {
   $outra_marca = trim($_POST['outra_marca']);
   $jogos = trim($_POST['jogos']);
   $canal = trim($_POST['canal']);
-  $interesse = $_POST['canal'];
+  $interesse = $_POST['interesse'];
   $descricao = trim($_POST['descricao']);
 
   // Email
@@ -25,7 +25,7 @@ function form_contact () {
 
   // Template de envio
   if (!count($errors) > 0) {
-    $emailTo = 'felipe.ferreira.ads@gmail.com';
+    $emailTo = 'contato@sehloirooficial.com.br';
     $body = "E-mail de o do site:\n\n";
     if ($nome) {
       $body .= "Nome: $nome\n";

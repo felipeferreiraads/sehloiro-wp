@@ -76,19 +76,19 @@
                     <span class="label interest">Serviços que tem interesse:</span>
                     <div class="checkbox-group">
                         <label>
-                            <input type="checkbox" name="interesse" value="Criação de marca" required>
+                            <input type="checkbox" name="interesse[]" value="Criação de marca" required>
                             <span>Criação de marca</span>
                         </label>
                         <label>
-                            <input type="checkbox" name="interesse" value="Registro de marcas" required>
+                            <input type="checkbox" name="interesse[]" value="Registro de marcas" required>
                             <span>Registro de marcas</span>
                         </label>
                         <label>
-                            <input type="checkbox" name="interesse" value="Consultoria" required>
+                            <input type="checkbox" name="interesse[]" value="Consultoria" required>
                             <span>Consultoria</span>
                         </label>
                         <label>
-                            <input type="checkbox" name="interesse" value="Produção de Conteúdo" required>
+                            <input type="checkbox" name="interesse[]" value="Produção de Conteúdo" required>
                             <span>Produção de Conteúdo</span>
                         </label>
                     </div>

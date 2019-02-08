@@ -13,7 +13,6 @@
             venha tomar um café conosco em nosso espaço e conhecer nossa vivência.</h2>
             <div class="map">
                 <h3>ESTAMOS LOCALIZADOS EM PINHEIROS, SÃO PAULO - BRASIL</h3>
-                <address>Rua do Studio no 9999</address>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29257.433928639704!2d-46.70595249770392!3d-23.56200516966543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5798cb16268f%3A0xa94014a3e39a3708!2sPinheiros%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1549216219162" frameborder="0" style="border:0"></iframe>
             </div>
             <div class="bottom">
