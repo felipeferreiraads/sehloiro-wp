@@ -46,7 +46,7 @@ $yogamer = get_field('yogamer');
                 </div>
                 <div class="column">
                     <?php the_field('descricao'); ?>
-                    <a href="<?php the_field('link_para_colaboracao'); ?>" class="button">
+                    <a href="<?php site_url('/seja-um-yogamer-do-bem/'); ?>" class="button">
                         <span class="icon-angle-right"></span>
                         <span>Seja um YoGamer do Bem</span>
                     </a>
