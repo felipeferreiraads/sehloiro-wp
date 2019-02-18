@@ -1,5 +1,6 @@
 <?php
 include('inc/form-contact.php');
+include('inc/form-ygb.php');
 
 add_theme_support('post-thumbnails');
 add_theme_support('title-tag');

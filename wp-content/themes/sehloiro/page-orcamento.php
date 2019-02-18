@@ -9,7 +9,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="SehLoiro">
             </a>
             <h2>Formulário para entendermos o que você precisa e encaminharmos a melhor solução.</h2>
-            <form class="js-form" action="<?php echo admin_url('admin-ajax.php') ?>" method="post" data-form-ajax="true">
+            <form class="js-form ui-form" action="<?php echo admin_url('admin-ajax.php') ?>" method="post" data-form-ajax="true">
                 <input type="hidden" name="action" value="form_contact">
                 <div class="grid">
                     <input type="text" name="nome" placeholder="Nome" class="two-thirds" required>

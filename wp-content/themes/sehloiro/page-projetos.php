@@ -14,7 +14,7 @@ $posts = new WP_Query(['post_type' => 'projetos', 'posts_per_page' => 50, 'order
         </figure>
         <div class="top">
             <h2>Conheça projetos que já realizamos</h2>
-            <a href="#">
+            <a href="#" class="scroll-left">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrows.jpg" alt="Próximo">
             </a>
         </div>
@@ -33,12 +33,6 @@ $posts = new WP_Query(['post_type' => 'projetos', 'posts_per_page' => 50, 'order
                     <span class="icon-angle-right"></span>
                     Leia +
                 </a>
-                <?php if($yogamer) :?>
-                <a href="<?php the_field('link_para_colaboracao');?>" class="ui-button">
-                    <span class="icon-angle-right"></span>
-                    Colabore
-                </a>
-                <?php endif; ?>
             </div>
         <?php endwhile; ?>
         </div>

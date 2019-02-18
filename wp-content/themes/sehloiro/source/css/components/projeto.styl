@@ -1,5 +1,7 @@
 .main-content
-    padding-top: 100px
+    padding: 100px
+    +below($bp.lg)
+        padding: 100px 0 50px
     .top
         display: flex
         justify-content: space-between
@@ -10,6 +12,21 @@
                 justify-content: center
                 img
                     max-width 70%
+        +above($bp.sm)
+            figure
+                width: 250px
+                img
+                    width: 100%
+
+    .logo
+        +below($bp.sm)
+            display block
+        img
+            width: 300px
+            +below($bp.sm)
+                width: 250px
+                margin: 0 auto
+                display: block
     .right
         display: flex
         flex-direction: column
@@ -28,12 +45,13 @@
             font-style: italic
             letter-spacing: 5px
             font-size: 20px
+            margin-top: 10px
         a
             font-size: 25px
             font-style: italic
             letter-spacing: 5px
             color: $color.primary
-    .content
+    .yogamer
         display flex
         justify-content: space-between
         flex-wrap: wrap
@@ -80,3 +98,22 @@
             margin-top: 50px
             &:hover
                 background: darken($color.primary, 10%)
+    .content
+        column-count: 2
+        column-gap: 50px
+        margin-top: 50px
+        +below($bp.sm)
+            column-count: 1
+        figure
+            width: 100%
+            height 150px
+            border-left: 10px solid $color.primary
+            margin-bottom: 50px
+            img
+                width: 100%
+                height 100%
+                object-fit: cover
+                object-position: center
+        p
+            &:not(:first-child)
+                margin-bottom: 20px

@@ -26,7 +26,7 @@ function form_contact () {
   // Template de envio
   if (!count($errors) > 0) {
     $emailTo = 'contato@sehloirooficial.com.br';
-    $body = "E-mail de o do site:\n\n";
+    $body = "E-mail de orçamento do site:\n\n";
     if ($nome) {
       $body .= "Nome: $nome\n";
     }

@@ -44,7 +44,7 @@
                 </div>
             </div>
 
-            <p class="interest">Se interessou? <a  href="contato.html">Entre em contato conosco</a></p>
+            <p class="interest">Se interessou? <a  href="<?php echo site_url('/orcamento/'); ?>">Entre em contato conosco</a></p>
 
             <div class="social">
                 <a href="https://www.facebook.com/SehLoirooficial/" target="_blank">

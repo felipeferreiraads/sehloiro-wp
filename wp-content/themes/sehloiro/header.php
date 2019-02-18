@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,800" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/style.min.css" rel="stylesheet">
 </head>
 
@@ -21,9 +21,6 @@
                 <div class="bar"></div>
             </div>
             <div class="circle"></div>
-        </div>
-        <div class="image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu.jpg" alt="Menu">
         </div>
     </header>
 

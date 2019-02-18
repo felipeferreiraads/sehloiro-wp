@@ -19,7 +19,7 @@
             <?php
                 if( have_rows('midia') ): $count = 0;
                     while ( have_rows('midia') ) : the_row();
-                        if($count % 3 === 0):
+                        if($count % 2 === 0):
                             if($count != 0) echo '</div>';
                             echo '<div class="column">';
                         endif;
