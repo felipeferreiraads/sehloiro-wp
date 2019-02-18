@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(); the_post(); ?>
 
     <main class="main-yogamer menu-switch">
         <div class="open-menu-mobile">
@@ -11,33 +11,14 @@
                     <div class="logo">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="SehLoiro">
                     </div>
-                    <h1>Seja um YoGamer do Bem</h1>
+                    <h1><?php get_the_title(); ?></h1>
                 </div>
                 <figure>
                     <img src="<?php echo get_template_directory_uri();?>/assets/img/yodinha-yogamer.jpg" alt="YoGamer do Bem">
                 </figure>
             </div>
             <div class="text">
-                <p>Quer ser um YoGamer?</p>
-                <p>Seja um voluntário! Veja as possibilidades.<p>
-                <p>Voluntário Pontual YGB<p>
-                <p>Esta forma de participação permite que a Comunidade Gamer coloque-se à disposição para contribuir pontualmente com as ações planejadas pelo YGB.
-                Para isso, você precisa preencher o formulário YGB e escolher uma maneira de colaborar e enviar para nossa equipe YGB.<p>
-                <ul>
-                    <li>Você pode oferecer-se para apoiar em uma determinada ação.
-                    Por exemplo: um voluntário pontual pode apoiar uma ação ou evento ou em qualquer outra atividade que demandar. Fale com nossa equipe ,
-                    envie o formulário e fique sabendo das próximas ações YGB</li>
-                    <li>Você pode oferecer suas habilidades e disponibilidades. Nesse caso, o YGB poderá procurá-lo caso precisem de alguma ajuda pontual.
-                    Por exemplo: um voluntário pontual pode oferecer suas habilidades profissionais ou pessoais, seu desejo de atuar com designer gráfico, fotógrafo,
-                    editor, planejador de projetos, atividades manuais ou atividades a distância.</li>
-                    <li>Você pode participar das campanhas institucionais.</li>
-                    <li>Você pode ser voluntário por um dia no espaço YGB</li>
-                </ul>
-                <p>Não vamos deixar ninguém para trás e avançar na construção de um mundo melhor. São ótimas oportunidades para você experimentar o trabalho
-                voluntário e contribuir para um grande esforço comum.</p>
-                <p>Colabore,<br>
-                indique parceiros,<br>
-                Seja um YoGamer do Bem</p>
+                <?php the_content(); ?>
             </div>
             <div class="form">
                 <h2>Preencha o formulário</h2>
